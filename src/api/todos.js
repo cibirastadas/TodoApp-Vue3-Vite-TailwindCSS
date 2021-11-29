@@ -2,7 +2,7 @@ import { HTTP } from "../axios";
 export const todos = {
   get: async () => {
     try {
-      let resp = await HTTP.get("?_limit=200");
+      let resp = await HTTP.get("?_limit=20");
       if (!resp.data) {
         throw Error("Empty todo list");
       }

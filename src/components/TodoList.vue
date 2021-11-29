@@ -74,7 +74,7 @@ const handleAddTodo = () => {
     completed: false,
   };
   todos
-    .add(task.value)
+    .add(newTask)
     .then((resp) => {
       tasks.value.unshift(newTask);
       alert(resp);
